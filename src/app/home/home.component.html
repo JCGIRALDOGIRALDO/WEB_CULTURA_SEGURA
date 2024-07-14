@@ -1,1 +1,108 @@
-<p>home works!</p>
+<div class="home">
+  <section class="home__section home__section--header">
+    <div class="home__header-block">
+      <img
+        class="home__header-block-image"
+        src="assets/images/BANNER-WEB_NUEVO-01.png"
+        alt="Logo representativo Cultura Segura"
+      />
+    </div>
+  </section>
+  <section class="home__section home__section--a">
+    <article class="home__heading">
+      <h2>ASÍ LO HACEMOS</h2>
+    </article>
+    <article class="home__description">
+      <p>
+        Inmersos en su organización, nuestro Modelo Cultura Segura® orienta su
+        compañía hacia la cultura del autocuidado y seguridad, incrementando a
+        la vez:
+      </p>
+    </article>
+    <article>
+      <div class="home__buttons">
+        <button
+          class="home__button"
+          (click)="
+            updateText(
+              'Madurez',
+              'Aspirar al máximo nivel de Cultura en SST (Vanguardista) caracterizado por la innovación, admisión del error como oportunidad de mejora, espíritu colaborativo, aporte a productividad, equipos seguros y saludables, BIG DATA SST, indicadores ejemplares en Seguridad y Salud en el Trabajo y altos resultados en Sostenibilidad.'
+            )
+          "
+        >
+          <img src="assets/icon/INSUMOS-03.png" alt="Icono Cohete" />
+          <h3>Madurez</h3>
+        </button>
+        <button
+          class="home__button"
+          (click)="
+            updateText(
+              'Productividad',
+              'Lograr la alineación de la SST con la cadena productiva reflejada en indicadores financieros como el ORE (overall resource effectiveness), el EVA, el Flujo de Caja Libre, el EBITDA, entre otros.'
+            )
+          "
+        >
+          <img src="assets/icon/INSUMOS-04.png" alt="Icono Panel" />
+          <h3>Productividad</h3>
+        </button>
+        <button
+          class="home__button"
+          (click)="
+            updateText(
+              'Sostenibilidad',
+              'Elevar la capacidad de los procesos para no generar daño en las personas, medio ambiente y bienes de la organización.'
+            )
+          "
+        >
+          <img src="assets/icon/INSUMOS-05.png" alt="Icono grafico" />
+          <h3>Sostenibilidad</h3>
+        </button>
+        <button
+          class="home__button"
+          (click)="
+            updateText(
+              'Rentabilidad',
+              'Conocer el retorno a la inversión de la Cultura Segura® en su organización por medio del EBITDA del proyecto.'
+            )
+          "
+        >
+          <img src="assets/icon/INSUMOS-06.png" alt="Icono rentabilidad" />
+          <h3>Rentabilidad</h3>
+        </button>
+        <button
+          class="home__button"
+          (click)="
+            updateText(
+              'Bienestar Humano',
+              'Instaurar el cuidado de la vida como valor supremo, reflejándose en la labor conjunta de los equipos de trabajo.'
+            )
+          "
+        >
+          <img src="assets/icon/INSUMOS-07.png" alt="Icono bienestar humano" />
+          <h3>Bienestar Humano</h3>
+        </button>
+      </div>
+      <div class="home__text-display">
+        <h3>{{ displayHeader }}</h3>
+        <p>{{ displayText }}</p>
+      </div>
+    </article>
+  </section>
+  <section class="home__section home__section--b">
+    <article>
+      <h3>titulo aqui</h3>
+    </article>
+    <article>
+      <div>box1</div>
+      <div>boz2</div>
+      <div>box3</div>
+    </article>
+    <article>
+      <button>boton</button>
+    </article>
+  </section>
+  <section class="home__section home__section--c"></section>
+  <section class="home__section home__section--d"></section>
+  <section class="home__section home__section--e"></section>
+  <section class="home__section home__section--f"></section>
+</div>
