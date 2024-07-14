@@ -1,0 +1,35 @@
+.navbar {
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  &__item {
+    margin-right: 1rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    color: #4d4d4d;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    font-weight: bold;
+    font-size: 1rem;
+    &.active {
+      border-bottom: 0.1rem solid #007bff;
+    }
+
+    &:hover {
+      border-bottom: 0.1rem solid #007bff;
+    }
+  }
+}
