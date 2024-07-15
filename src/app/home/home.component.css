@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .home {
   width: 95%;
   margin: 0 auto;
@@ -29,23 +30,19 @@
   border-radius: 0.5rem;
 }
 
-.home__heading {
-  h2 {
-    font-size: 3rem;
-    color: #5494d4;
-    text-align: center;
-    margin-top: 4.5rem;
-  }
+.home__heading h2 {
+  font-size: 3rem;
+  color: #5494d4;
+  text-align: center;
+  margin-top: 4.5rem;
 }
 
-.home__description {
-  p {
-    width: 70%;
-    font-size: 1.5rem;
-    color: #4d4d4d;
-    text-align: center;
-    margin: 0.1rem auto;
-  }
+.home__description p {
+  width: 70%;
+  font-size: 1.5rem;
+  color: #4d4d4d;
+  text-align: center;
+  margin: 0.1rem auto;
 }
 
 .home__buttons {
@@ -66,19 +63,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
-  &:hover {
-    background-color: #f0f0f0;
-  }
+.home__button:hover {
+  background-color: #f0f0f0;
+}
 
-  h3 {
-    margin: 0.5rem 0 0 0;
-  }
+.home__button h3 {
+  margin: 0.5rem 0 0 0;
+}
 
-  img {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-  }
+.home__button img {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .home__text-display {
@@ -97,20 +94,20 @@
   border-radius: 0.5rem;
   border: 0.1rem solid #0056b3;
   overflow: hidden;
+}
 
-  h3 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    width: 25%;
-    margin: 0;
-  }
+.home__text-display h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: 25%;
+  margin: 0;
+}
 
-  p {
-    font-size: 1.3rem;
-    text-align: start;
-    width: 70%;
-    margin: 0.3rem 0 0 0;
-  }
+.home__text-display p {
+  font-size: 1.3rem;
+  text-align: start;
+  width: 70%;
+  margin: 0.3rem 0 0 0;
 }
 
 .home__section--b {
@@ -119,13 +116,9 @@
   margin: 4rem auto;
   width: 70%;
   position: relative;
-
   /* Aplicar degradados a cada borde */
   border: 0.1rem solid transparent;
-  background-image: linear-gradient(to right, #40b47d, #3da7dc),
-    linear-gradient(to bottom, #40b47d, #3da7dc),
-    linear-gradient(to left, #3da7dc, #3da7dc),
-    linear-gradient(to top, #40b47d, #3da7dc);
+  background-image: linear-gradient(to right, #40b47d, #3da7dc), linear-gradient(to bottom, #40b47d, #3da7dc), linear-gradient(to left, #3da7dc, #3da7dc), linear-gradient(to top, #40b47d, #3da7dc);
   background-size: 100% 0.1rem, 0.1rem 100%, 100% 0.1rem, 0.1rem 100%;
   background-position: top, right, bottom, left;
   background-repeat: no-repeat;
@@ -161,9 +154,10 @@
   font-size: 6rem;
   margin: 0;
   padding: 0;
-  p {
-    font-weight: bold;
-  }
+}
+
+.home__step-number p {
+  font-weight: bold;
 }
 
 .home__step-text {
@@ -171,15 +165,15 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
+}
 
-  p {
-    font-size: 1.5rem;
+.home__step-text p {
+  font-size: 1.5rem;
+}
 
-    span {
-      font-size: 1.1rem;
-      color: #85868c;
-    }
-  }
+.home__step-text p span {
+  font-size: 1.1rem;
+  color: #85868c;
 }
 
 .button__section--b {
@@ -187,6 +181,7 @@
   height: 4rem;
   margin: auto auto -2.5rem auto;
 }
+
 .home__button--b {
   background-color: #0056b3;
   border: none;
@@ -195,15 +190,19 @@
   font-size: 1.2rem;
   font-weight: bold;
 }
+
 .home__num1 {
   color: #afca52;
 }
+
 .home__num2 {
   color: #5494d4;
 }
+
 .home__num3 {
   color: #415aa6;
 }
+
 .home__section--c {
   /* Estilos específicos para la sección C */
 }
