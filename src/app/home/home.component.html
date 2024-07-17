@@ -1,19 +1,19 @@
 <div class="home">
-  <section class="home__section home__section--header">
-    <div class="home__header-block">
+  <section class="home__section home__section--intro">
+    <div class="home__section--intro__block">
       <img
-        class="home__header-block__image"
+        class="home__section--intro__image"
         src="assets/images/BANNER-WEB_NUEVO-01.png"
         alt="Logo representativo Cultura Segura"
       />
     </div>
   </section>
 
-  <section class="home__section home__section--a">
-    <article class="home__heading">
-      <h2>ASÍ LO HACEMOS</h2>
+  <section class="home__section home__section--make">
+    <article class="home__section--make__title">
+      <h3>ASÍ LO HACEMOS</h3>
     </article>
-    <article class="home__description">
+    <article class="home__section--make__description">
       <p>
         Inmersos en su organización, nuestro Modelo Cultura Segura® orienta su
         compañía hacia la cultura del autocuidado y seguridad, incrementando a
@@ -21,9 +21,9 @@
       </p>
     </article>
     <article>
-      <div class="home__buttons">
+      <div class="home__section--make__buttons">
         <button
-          class="home__button"
+          class="home__section--make__button"
           (click)="
             updateText(
               'Madurez',
@@ -35,7 +35,7 @@
           <h3>Madurez</h3>
         </button>
         <button
-          class="home__button"
+          class="home__section--make__button"
           (click)="
             updateText(
               'Productividad',
@@ -47,7 +47,7 @@
           <h3>Productividad</h3>
         </button>
         <button
-          class="home__button"
+          class="home__section--make__button"
           (click)="
             updateText(
               'Sostenibilidad',
@@ -59,7 +59,7 @@
           <h3>Sostenibilidad</h3>
         </button>
         <button
-          class="home__button"
+          class="home__section--make__button"
           (click)="
             updateText(
               'Rentabilidad',
@@ -71,7 +71,7 @@
           <h3>Rentabilidad</h3>
         </button>
         <button
-          class="home__button"
+          class="home__section--make__button"
           (click)="
             updateText(
               'Bienestar Humano',
@@ -83,7 +83,7 @@
           <h3>Bienestar Humano</h3>
         </button>
       </div>
-      <div class="home__text-display">
+      <div class="home__section--make__display">
         <h3>{{ displayHeader }}</h3>
         <p>{{ displayText }}</p>
       </div>
