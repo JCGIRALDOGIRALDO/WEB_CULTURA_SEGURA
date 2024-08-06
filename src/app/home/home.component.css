@@ -111,11 +111,11 @@
   margin: 0.3rem 0 0 0;
 }
 
-.home__section--b {
+.home__section--stages {
   display: flex;
   flex-direction: column;
   margin: 4rem auto;
-  width: 88%;
+  width: 70%;
   position: relative;
   /* Aplicar degradados a cada borde */
   border: 0.1rem solid transparent;
@@ -125,14 +125,14 @@
   background-repeat: no-repeat;
 }
 
-.home__article {
+.home__section--stages__article {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
-.home__article__title {
+.home__section--stages__article--title {
   margin: -0.8rem auto;
   text-align: center;
   background-color: #f2f2f2;
@@ -143,7 +143,14 @@
   color: #85868c;
 }
 
-.home__step {
+.home__section--stages__home {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  justify-content: space-evenly;
+}
+
+.home__section--stages__home--step {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -151,60 +158,61 @@
   width: 20%;
 }
 
-.home__step__number {
+.home__section--stages__home--step__number {
   font-size: 6rem;
   margin: 0;
   padding: 0;
 }
 
-.home__step__number p {
+.home__section--stages__home--step__number p {
   font-weight: bold;
 }
 
-.home__step__text {
+.home__section--stages__home--step__number--num1 {
+  color: #afca52;
+}
+
+.home__section--stages__home--step__number--num2 {
+  color: #5494d4;
+}
+
+.home__section--stages__home--step__number--num3 {
+  color: #415aa6;
+}
+
+.home__section--stages__home--step__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
 }
 
-.home__step__text p {
+.home__section--stages__home--step__text p {
   font-size: 1.5rem;
 }
 
-.home__step__text p span {
+.home__section--stages__home--step__text p span {
   font-size: 1.1rem;
   color: #85868c;
 }
 
-.home__article--button-section-b {
+.home__section--stages__button {
   width: 20%;
-  height: 4rem;
+  border: 1.2rem solid #5494d4;
   margin: auto auto -2.5rem auto;
+  box-shadow: 0.2rem 0.1rem 0.5rem 0.1rem #cccccc;
 }
 
-.home__button--b {
-  background-color: #0056b3;
+.home__section--stages__button--learnMore {
+  background-color: #5494d4;
   border: none;
   width: 100%;
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
-.home__step__number--num1 {
-  color: #afca52;
-}
-
-.home__step__number--num2 {
-  color: #5494d4;
-}
-
-.home__step__number--num3 {
-  color: #415aa6;
-}
-
-.home__section--c {
+.home__section--findOut {
   width: 95%;
   background: linear-gradient(to right, #5493d3, #40448f);
   color: #ffffff;
@@ -216,7 +224,7 @@
   height: 8.5rem;
 }
 
-.home__section__title {
+.home__section--findOut__title {
   text-align: center;
   padding: 0.5rem;
   font-size: 2rem;
@@ -226,17 +234,13 @@
   font-weight: bold;
 }
 
-.home__section--d {
+.home__section--latest {
   display: flex;
   flex-direction: column;
   width: 95%;
 }
 
-.home__article__image {
-  width: 2rem;
-}
-
-.home__article__image img {
+.home__section--latest__article--image img {
   width: 2rem;
 }
 
