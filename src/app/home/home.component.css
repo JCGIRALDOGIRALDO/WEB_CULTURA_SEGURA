@@ -297,7 +297,7 @@
 
 .home__section--blogs {
   width: 80%;
-  margin: 3rem auto;
+  margin: 4rem auto;
   display: flex;
   flex-direction: column;
 }
@@ -319,12 +319,18 @@
 .home__section--blogs__article--box__img {
   width: auto;
   z-index: 2;
+  overflow: hidden;
 }
 
 .home__section--blogs__article--box__img img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  transition: transform 1s ease-in-out;
+}
+
+.home__section--blogs__article--box__img img:hover {
+  transform: scale(1.1);
 }
 
 .home__section--blogs__article--box__content {
@@ -349,6 +355,46 @@
   margin-top: 0.2rem;
   margin-bottom: 1rem;
   color: #333333;
+}
+
+.home__section--contact {
+  width: 100%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.home__section--contact__article1 {
+  width: 100%;
+  height: 15rem;
+  background-color: #d6d6d6;
+  display: flex;
+  flex-direction: column;
+}
+
+.home__section--contact__article1--title p {
+  color: #ffffff;
+  text-align: center;
+  margin: 1rem auto;
+  font-size: 1.5rem;
+}
+
+.home__section--contact__article1--dataFields {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__section--contact__article1--dataFields__input input {
+  width: 20rem;
+  height: 2rem;
+  margin: 2rem;
+}
+
+.home__section--contact__article2 {
+  width: 100%;
+  height: 15rem;
 }
 
 .home__section--f {
