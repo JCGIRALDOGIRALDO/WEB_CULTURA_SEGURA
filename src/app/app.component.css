@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -11,39 +12,37 @@ body {
 
 .app-container {
   display: grid;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
+  grid-template-areas: "header" "main" "footer";
   grid-template-rows: auto 1fr auto;
   grid-gap: 1rem;
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
-
   background-color: #ffffff;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Definición de áreas específicas */
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
+  .app-container {
     max-width: 100%;
     padding: 10px;
   }
+}
 
-  /* Definición de áreas específicas */
-  &__header {
-    grid-area: header;
-    width: 100%;
-  }
+.app-container__header {
+  grid-area: header;
+  width: 100%;
+}
 
-  &__main {
-    grid-area: main;
-    width: 100%;
-  }
+.app-container__main {
+  grid-area: main;
+  width: 100%;
+}
 
-  &__footer {
-    grid-area: footer;
-    width: 100%;
-  }
+.app-container__footer {
+  grid-area: footer;
+  width: 100%;
 }

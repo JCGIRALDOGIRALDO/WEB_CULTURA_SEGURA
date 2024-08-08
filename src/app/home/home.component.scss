@@ -5,15 +5,15 @@
   display: flex;
   flex-direction: column;
   padding: 0.5rem;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   // Primera sesion del Home para imagen principal
   &__section {
     margin-bottom: 1rem;
     padding: 0.5rem;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     // Contenedor
     &--intro {
-      background-color: #f2f2f2;
+      background-color: #ffffff;
       // Bloque de la imagen
       &__block {
         display: flex;
@@ -54,6 +54,7 @@
         justify-content: space-around;
         margin-top: 5rem;
         margin-bottom: 1rem;
+
         // Estilos por boton
       }
       &__button {
@@ -67,6 +68,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: #ffffff;
         &:hover {
           background-color: #f0f0f0;
           // Titulo con cada nombre del boton
@@ -140,7 +142,7 @@
         &--title {
           margin: -0.8rem auto;
           text-align: center;
-          background-color: #f2f2f2;
+          background-color: #ffffff;
           font-size: 2rem;
           width: 85%;
           padding-left: 1rem;
@@ -334,7 +336,7 @@
         &--box {
           width: 25%;
           margin-bottom: 2rem;
-          background-color: #ffffff;
+          background-color: #f2f2f2;
 
           &__img {
             width: auto;
@@ -434,36 +436,69 @@
       }
       &__article2 {
         width: 100%;
-        height: 15rem;
+        height: 20rem;
+        margin-top: 2rem;
         &--customers {
           p {
             text-align: center;
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
             color: #4d4d4d;
           }
         }
         &--gallery {
-          height: 15rem;
-          width: 100%;
+          width: 85%;
+          margin: 0 auto;
+          overflow: hidden;
 
           &__container {
             display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            display: inline;
-            flex-wrap: wrap;
-            flex-grow: 1 0 auto;
+            align-items: center;
+            position: sticky;
+            height: 100%;
+            width: 100%;
           }
+
           &__arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 2rem;
+            padding: 0.5rem;
+            z-index: 2;
+
             &--left {
+              left: 0.7rem;
             }
+
             &--right {
+              right: 0.7rem;
             }
           }
+
           &__images {
+            flex: 1;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+
             &__wrapper {
+              display: flex;
+              transition: transform 0.5s ease;
+              width: 100%;
+              height: 100%;
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                margin-right: 1rem;
+              }
             }
           }
         }

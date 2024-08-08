@@ -1,0 +1,37 @@
+.navbar {
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+}
+
+.navbar__list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-evenly;
+}
+
+.navbar__item {
+  margin-right: 1rem;
+}
+
+.navbar__item:last-child {
+  margin-right: 0;
+}
+
+.navbar__link {
+  color: #4d4d4d;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar__link.active {
+  border-bottom: 0.1rem solid #007bff;
+}
+
+.navbar__link:hover {
+  border-bottom: 0.1rem solid #007bff;
+}
