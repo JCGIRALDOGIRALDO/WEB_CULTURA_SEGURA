@@ -445,12 +445,29 @@
           }
         }
         &--gallery {
+          height: 15rem;
+          width: 100%;
+
+          &__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            display: inline;
+            flex-wrap: wrap;
+            flex-grow: 1 0 auto;
+          }
+          &__arrow {
+            &--left {
+            }
+            &--right {
+            }
+          }
+          &__images {
+            &__wrapper {
+            }
+          }
         }
       }
     }
   }
-}
-
-.home__section--f {
-  /* Estilos específicos para la sección F */
 }
