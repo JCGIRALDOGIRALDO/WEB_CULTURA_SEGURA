@@ -498,7 +498,32 @@
         <p>CLIENTES</p>
       </div>
       <div class="home__section--contact__article2--gallery">
-        <p>galeria de imagenes</p>
+        <div class="home__section--contact__article2--gallery__container">
+          <button
+            class="home__section--contact__article2--gallery__arrow home__section--contact__article2--gallery__arrow--left"
+            (click)="prevImage()"
+          >
+            &#10094;
+          </button>
+          <div class="home__section--contact__article2--gallery__images">
+            <div
+              class="home__section--contact__article2--gallery__images__wrapper"
+            >
+              <img
+                *ngFor="let image of images; let i = index"
+                [src]="image"
+                [class.active]="i === currentIndex"
+                alt="Image {{ i + 1 }}"
+              />
+            </div>
+          </div>
+          <button
+            class="home__section--contact__article2--gallery__arrow home__section--contact__article2--gallery__arrow--right"
+            (click)="nextImage()"
+          >
+            &#10095;
+          </button>
+        </div>
       </div>
     </article>
   </section>
