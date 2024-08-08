@@ -1,34 +1,43 @@
 // Contenedor del Home
 .home {
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 0.5rem;
+
   background-color: #ffffff;
   // Primera sesion del Home para imagen principal
   &__section {
+    width: 100%;
+    margin: 0 auto;
     margin-bottom: 1rem;
-    padding: 0.5rem;
+
     background-color: #ffffff;
     // Contenedor
     &--intro {
       background-color: #ffffff;
+      width: 100%;
+      margin: 0 auto;
       // Bloque de la imagen
       &__block {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 95%;
+        margin: 0 auto;
       }
       //Imagen
       &__image {
-        max-width: 100%;
+        max-width: 95%;
+        margin: 0 auto;
         height: auto;
         border-radius: 0.5rem;
       }
     }
     //contenedor
     &--make {
+      width: 95%;
+      margin: 0 auto;
       // Titulo asi lo hacemos
       &__title {
         h3 {
@@ -151,6 +160,7 @@
         }
       }
       &__home {
+        width: 100%;
         display: flex;
         flex-direction: row;
         width: auto;

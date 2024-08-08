@@ -1,6 +1,8 @@
 .navbar {
   background-color: #ffffff;
   padding: 0.5rem 1rem;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .navbar__list {
