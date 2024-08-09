@@ -16,13 +16,13 @@ import { interval, Subscription } from 'rxjs';
   standalone: true,
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  imports: [CommonModule], // Asegúrate de que CommonModule está correctamente importado aquí
+  imports: [CommonModule],
 })
 export class HomeComponent implements OnInit, OnDestroy {
   displayHeader: string = 'Madurez';
   displayText: string =
     'Aspirar al máximo nivel de Cultura en SST (Vanguardista) caracterizado por la innovación, admisión del error como oportunidad de mejora, espíritu colaborativo, aporte a productividad, equipos seguros y saludables, BIG DATA SST, indicadores ejemplares en Seguridad y Salud en el Trabajo y altos resultados en Sostenibilidad.';
-
+  // Agregar imagenes para el carrusel
   images = [
     'assets/images/gallery/Mesa-de-trabajo-1-copia-2-200x200.png',
     'assets/images/gallery/Mesa-de-trabajo-1-copia-3.png',
@@ -49,7 +49,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   @ViewChild('galleryWrapper') galleryWrapper: ElementRef | undefined;
   currentIndex = 0;
-  imageWidth = 100; // Ajusta según el ancho de tus imágenes
+  imageWidth = 100;
   groupSize = 5;
   autoScrollInterval = 5000; // Intervalo de desplazamiento automático en ms
   private autoScrollSubscription: Subscription | undefined;
@@ -97,10 +97,10 @@ export class HomeComponent implements OnInit, OnDestroy {
     if (this.isBrowser) {
       const wrapper = this.galleryWrapper?.nativeElement as HTMLElement;
       if (wrapper) {
-        const totalWidth = this.groupSize * this.imageWidth; // Calcula el ancho total del grupo de imágenes
-        const index = Math.floor(this.currentIndex / this.groupSize); // Calcula el índice del grupo
-        const offset = -index * totalWidth; // Calcula el desplazamiento total
-        wrapper.style.transform = `translateX(${offset}px)`; // Ajusta el desplazamiento en píxeles
+        const totalWidth = this.groupSize * this.imageWidth;
+        const index = Math.floor(this.currentIndex / this.groupSize);
+        const offset = -index * totalWidth;
+        wrapper.style.transform = `translateX(${offset}px)`;
       }
     }
   }
