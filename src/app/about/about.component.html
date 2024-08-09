@@ -1,1 +1,106 @@
-<p>about works!</p>
+<div class="about">
+  <section class="about__section--intro">
+    <div class="about__section--intro__block">
+      <img
+        class="about__section--intro__image"
+        src="assets/images/Bannerwebnosotros2-1.png"
+        alt="imagen cumunicativa sobre nosotros cultura segura"
+      />
+    </div>
+  </section>
+  <section class="about__section--values">
+    <article class="about__section--make__title">
+      <h3>ASÍ LO HACEMOS</h3>
+    </article>
+    <article class="about__section--make__description">
+      <p>
+        Inmersos en su organización, nuestro Modelo Cultura Segura® orienta su
+        compañía hacia la cultura del autocuidado y seguridad, incrementando a
+        la vez:
+      </p>
+    </article>
+    <article>
+      <div class="about__section--make__buttons">
+        <button
+          class="about__section--make__button"
+          (click)="
+            updateText(
+              'Lealtad',
+              'Es la fidelidad y respeto hacia el cuidado del buen nombre de Cultura Segura y quienes la conforman, el respeto a los acuerdos, las decisiones, el buen uso de las instalaciones, los equipos tecnológicos, la propiedad intelectual y confidencialidad en información de nuestros clientes. HACE ALUSION A LA HONESTIDAD.'
+            )
+          "
+        >
+          <img src="assets/icon/IconAbout/lealtad.jpg" alt="Icono manos" />
+          <h3>Lealtad</h3>
+        </button>
+        <button
+          class="about__section--make__button"
+          (click)="
+            updateText(
+              'Compromiso',
+              'Es el cumplimiento con lo pactado, el valor de la palabra dada, tanto en lo verbal como en lo escrito. Es la búsqueda de la calidad y el mejoramiento continuo de cada uno de los miembros de CULTURA SEGURA bajo la filosofía de sentir como propios los objetivos de la organización.'
+            )
+          "
+        >
+          <img
+            src="assets/icon/IconAbout/compromiso.jpg"
+            alt="Icono manos con corazon"
+          />
+          <h3>Compromiso</h3>
+        </button>
+        <button
+          class="about__section--make__button"
+          (click)="
+            updateText(
+              'Interdependiencia',
+              'Vocación por el trabajo con los demás para el logro de los objetivos comunes. Por ello en Cultura Segura los logros están diseñados para que los beneficiados sean la colectividad, no la individualidad.'
+            )
+          "
+        >
+          <img
+            src="assets/icon/IconAbout/interdependiencia.jpg"
+            alt="Icono circulo personas"
+          />
+          <h3>Interdependiencia</h3>
+        </button>
+        <button
+          class="about__section--make__button"
+          (click)="
+            updateText(
+              'Innovación',
+              'Diseño e implementación de nuevas ideas, conceptos, productos, servicios y prácticas, con la intención de ser útiles para el incremento de la productividad. La innovación exige la conciencia y el equilibrio para transportar las ideas, del campo imaginario al de las realizaciones e implementaciones en pro de la máxima satisfacción de las necesidades teóricas y tecnológicas de las organizaciones.'
+            )
+          "
+        >
+          <img src="assets/icon/IconAbout/innovacion.jpg" alt="Icono cohete" />
+          <h3>Innovación</h3>
+        </button>
+        <button
+          class="about__section--make__button"
+          (click)="
+            updateText(
+              'Sociabilidad',
+              'Define la inclinación al buen trato y relación con las personas, clientes y agremiaciones. La socialización con el entorno es el camino para construir relaciones de confianza y tener negocios sostenibles de mutuo beneficio.'
+            )
+          "
+        >
+          <img
+            src="assets/icon/IconAbout/sociabilidad.jpg"
+            alt="Icono social"
+          />
+          <h3>Sociabilidad</h3>
+        </button>
+        <!-- Añadir más botones según sea necesario -->
+      </div>
+      <div class="about__section--make__display">
+        <h3>{{ displayHeader }}</h3>
+        <p>{{ displayText }}</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="about__section--Purpose"></section>
+  <section class="about__section--Allies"></section>
+  <section class="about__section--talk"></section>
+  <section class="about__section--Accompany"></section>
+</div>
