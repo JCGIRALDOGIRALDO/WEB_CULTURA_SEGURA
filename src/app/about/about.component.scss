@@ -6,28 +6,25 @@
     width: 100%;
     position: relative;
     &--values {
+      background-color: #ffffff;
       width: 95%;
       margin: 0 auto;
-      padding: 2rem 0;
     }
     &--make {
       &__title {
         h3 {
-          font-size: 3rem;
-          color: #5494d4;
+          font-size: 2rem;
+          color: #85868c;
           text-align: center;
-          margin-top: 4.5rem;
+          margin-top: 2rem;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        span {
+          color: #ffffff;
+          background-color: #5494d4;
         }
       }
-      &__description {
-        p {
-          width: 70%;
-          font-size: 1.5rem;
-          color: #4d4d4d;
-          text-align: center;
-          margin: 0.1rem auto;
-        }
-      }
+
       &__buttons {
         display: flex;
         flex-wrap: wrap;
@@ -42,21 +39,17 @@
         h3 {
           margin: 0.5rem 0 0 0;
         }
-        &:hover {
-          background-color: #f0f0f0;
-        }
       }
       &__button {
         color: #4d4d4d;
+        background-color: #ffffff;
         border: none;
-        padding: 0.5rem 1rem;
-        border-radius: 0.5rem;
         cursor: pointer;
-        transition: background-color 0.3s, transform 0.3s;
+        transition: background-color 0.5s, transform 0.5s;
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #ffffff;
+
         text-align: center;
       }
       &__display {
@@ -64,7 +57,7 @@
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        width: 100%;
+        width: 95%;
         height: 10rem;
         margin: 3rem auto;
         padding: 0.3rem;
@@ -88,6 +81,26 @@
           text-align: start;
           width: 70%;
           margin: 0.3rem 0 0 0;
+        }
+      }
+    }
+    &--Purpose {
+      background-color: #ffffff;
+      margin-top: -3rem;
+      &__article {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 2rem;
+        &--container {
+          width: 50%;
+          margin: 2rem auto;
+          &--box {
+            display: flex;
+            flex-direction: row;
+          }
         }
       }
     }
